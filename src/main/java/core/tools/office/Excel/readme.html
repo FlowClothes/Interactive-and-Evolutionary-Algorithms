@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <fieldset>
+            <legend>把数据追加到文件中</legend>
+            目前还没有找到像new FileOutputStream(filename,true)通过第2个参数true设置为append模式的方法，因此用一个读出FileInputStream后再FileOutputStream的方法,这个方法参考了CSDN的一篇文章。<br>
+            所以在运行过程中，内存的变化有如下图的过程：<br>
+            <img src="appendData.png" alt="这里有一个图像"/>
+        </fieldset>
+    </body>
+</html>

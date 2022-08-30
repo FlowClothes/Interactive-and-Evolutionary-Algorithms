@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>数据处理步骤</div>
+        保存于Excel的实验数据处理步骤如下：
+        <ol>
+            <li>找到实验数据所在目录，拷贝下文件路径和实验数据文件名称，在后面的调用代码中，要用这些文件名称</li>
+            <li>文件名中可能存在空格，统一处理一下，重命名，调用RenameFile</li>
+            <li>实验数据存在没对齐的情况，即有的提前结束进化，有的进化时间则较长。为此调用D1FillUnbalancedata，将数据对齐。</li>
+            <li>接下来，查看文件中是否已经求数据的平均值，即多次实验的统计值。如没有，则调用D2AverageFormular2Cell在Excel文件中加入公式，从而在打开Excel文件时，可以得到统计数据，而不用手动插入公式。</li>
+            <li>调用D4SummaryData，把各种进化种群情况（10，20，30，...）下的所有的统计数据拷贝到同一个文件中</li>
+            <li>再接下来，对各种进化种群的数据进行对齐化处理，即按照评价个体的对齐，调用D4AlignData4PS</li>
+            <li>求各种情况下，进化效果与种群规模的相关性</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        在<a href=http://benchmarkfcns.xyz/fcns>benchmark网站</a>上提供了很多测试函数。 <br>
+        只要用你的函数替换本包下的对应的函数即可用本系统优化你的函数。但是需要注意的是函数决策变量的维数，目标个数等需要调整，最好找到最匹配的函数仿照修改。<br>
+        <hr>
+        从F11到F33是可调维度的函数，修改函数的维度可以在resouces/Controlparameters.conf文件中进行设置，这些函数来自文献Zhou, Xiao-Gen, et al. "Underestimation-assisted global-local cooperative differential evolution and the application to protein structure prediction." IEEE Transactions on Evolutionary Computation 24.3 (2019): 536-550.详细这些函数的信息可以在该文的补充文件中得到。 <hr>
+        在YU W-J, SHEN M, CHEN W-N, et al. Differential Evolution With Two-Level Parameter Adaptation [J]. IEEE Transactions on Cybernetics, 2014, 44(7): 1080-99.中给出了不少关于这些函数的说明。<br>
+      Unimodal的函数包括：F11,F13,F14,F19,F20,F34,可用于test the convergence speed of algorithm
+      multi-modal的函数包括:F0,F23,F28,
+      含噪的函数包括:F4
+      维数不可变的包括：F0-F10;维数可变的包括：F11以后的函数
+      F48是一个求解一元二次函数系数的例子
+    </body>
+</html>
